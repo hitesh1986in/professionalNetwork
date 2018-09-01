@@ -363,15 +363,16 @@ class FrontfbController extends BaseController
 
             $user->subject = $confirmmail->subject;
 
-            $data = array('content' => $confirmmail->comment, 'email' => 'sahil_kaushal@esferasoft.com', 'first_name' => $user->name, 'from' => 'sahil_kaushal@esferasoft.com', 'activate' => $code);
+            $data = array('content' => $confirmmail->comment, 'email' => 'radhikapnetwrok@gmail.com', 'first_name' => $user->name, 'from' => 'radhikapnetwrok@gmail.com', 'activate' => $code);
 //$data = array( 'subject' => $user->subject, 'comment' => $user->comment, 'from' => '', 'from_name' => 'Meh','activate' => $code);
 
-
-            Mail::send('fb.activate', $data, function ($message) use ($user) {
+            $mail_send = Mail::send('fb.activate', $data, function ($message) use ($user) {
                 $message->to($user->email, $user->name)->from($user->froms, $user->froms)
                     ->subject($user->subject);
 
             });
+
+            var_dump($mail_send);exit;
 
 
             Session::flash('activte', "Account Creation Successful, Please activate your account by clicking on the link provided by an email you will receive.");

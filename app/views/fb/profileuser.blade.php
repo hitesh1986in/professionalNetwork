@@ -133,7 +133,7 @@
 
 
                         $.ajax({
-                            url: "/fbmedia/save",
+                            url: {{url("/fbmedia/save")}},
                             type: "POST",
                             xhr: function () { // custom xhr (is the best)
 
@@ -658,7 +658,7 @@
                                         <input id="rand" name="rand" type="hidden" value="<?php echo $rands;?>">
 
 
-                                        <input name="submit" id="submitf" tabindex="5" value="submit" type="submit"
+                                        <input name="submit" id="submitf" tabindex="5" value="submit" type="button"
                                                style="display:none;">
                                         {{ Form:: close() }}
                                         <?php

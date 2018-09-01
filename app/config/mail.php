@@ -55,7 +55,7 @@ return array(
     */
 
     //'from' => array('address' => null, 'name' => null),
-    'from' => array('address' => 'sahil_kaushal@esferasoft.com', 'name' => 'Awesome Laravel 4 Auth App'),
+    'from' => array('address' => 'radhikapnetwork@gmail.com', 'name' => 'Professional Network'),
 
 
     /*
@@ -82,7 +82,7 @@ return array(
     |
     */
 
-    'username' => 'sahil_kaushal@esferasoft.com',
+    'username' => 'radhikapnetwork@gmail.com',
 
     /*
     |--------------------------------------------------------------------------
@@ -95,7 +95,7 @@ return array(
     |
     */
 
-    'password' => 's(esfer_234)@Dr',
+    'password' => 'Radhika@123',
 
     /*
     |--------------------------------------------------------------------------

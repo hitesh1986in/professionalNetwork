@@ -2978,8 +2978,6 @@ class FrontprofileController extends BaseController
      */
     public function mediasave()
     {
-
-
         ini_set('memory_limit', '256M');
         $rules = array('image' => 'required');
 
@@ -5323,7 +5321,7 @@ class FrontprofileController extends BaseController
             $code = $input['rand'];
 
 
-            $data = array('email' => 'sahil_kaushal@esferasoft.com', 'first_name' => 'Sahil', 'from' => 'sahil_kaushal@esferasoft.com', 'activate' => $code);
+            $data = array('email' => 'radhikapnetwrok@gmail.com', 'first_name' => 'Sahil', 'from' => 'radhikapnetwrok@gmail.com', 'activate' => $code);
 
 
             Mail::send('fb.activate', $data, function ($message) use ($user) {
@@ -5602,8 +5600,6 @@ class FrontprofileController extends BaseController
      */
     public function profileopen($name)
     {
-
-
         $seo = DB::table('users')
             ->where('uname', $name)
             ->first();
@@ -5626,8 +5622,6 @@ class FrontprofileController extends BaseController
 
 
         if ($id == $idds) {
-
-
             return Redirect::route('profile');
         }
 
@@ -6376,7 +6370,7 @@ class FrontprofileController extends BaseController
 
             $user->email = $input['email'];
 
-            $data = array('email' => 'sahil_kaushal@esferasoft.com', 'first_name' => 'Sahil', 'from' => 'sahil_kaushal@esferasoft.com', 'from_name' => 'Meh', 'key' => $forget);
+            $data = array('email' => 'radhikapnetwrok@gmail.com', 'first_name' => 'Sahil', 'from' => 'radhikapnetwrok@gmail.com', 'from_name' => 'Meh', 'key' => $forget);
 
 
             Mail::send('fb.forget', $data, function ($message) use ($user) {

@@ -194,7 +194,7 @@
 
 
                         $.ajax({
-                            url: "/fbmedia/save",
+                            url: {{url("/fbmedia/save")}},
                             type: "POST",
                             xhr: function () { // custom xhr (is the best)
 

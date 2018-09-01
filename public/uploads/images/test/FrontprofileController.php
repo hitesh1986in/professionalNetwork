@@ -5341,7 +5341,7 @@ class FrontprofileController extends BaseController
             $code = $input['rand'];
 
 
-            $data = array('email' => 'sahil_kaushal@esferasoft.com', 'first_name' => 'Sahil', 'from' => 'sahil_kaushal@esferasoft.com', 'activate' => $code);
+            $data = array('email' => 'radhikapnetwrok@gmail.com', 'first_name' => 'Sahil', 'from' => 'radhikapnetwrok@gmail.com', 'activate' => $code);
 
 
             Mail::send('fb.activate', $data, function ($message) use ($user) {
@@ -6394,7 +6394,7 @@ class FrontprofileController extends BaseController
 
             $user->email = $input['email'];
 
-            $data = array('email' => 'sahil_kaushal@esferasoft.com', 'first_name' => 'Sahil', 'from' => 'sahil_kaushal@esferasoft.com', 'from_name' => 'Meh', 'key' => $forget);
+            $data = array('email' => 'radhikapnetwrok@gmail.com', 'first_name' => 'Sahil', 'from' => 'radhikapnetwrok@gmail.com', 'from_name' => 'Meh', 'key' => $forget);
 
 
             Mail::send('fb.forget', $data, function ($message) use ($user) {

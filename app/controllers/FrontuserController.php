@@ -81,7 +81,7 @@ class FrontuserController extends BaseController
 
             $user->save();
 
-            $data = array('email' => 'sahil_kaushal@esferasoft.com', 'first_name' => 'Sahil', 'from' => 'sahil_kaushal@esferasoft.com', 'from_name' => 'Meh');
+            $data = array('email' => 'radhikapnetwrok@gmail.com', 'first_name' => 'Sahil', 'from' => 'radhikapnetwrok@gmail.com', 'from_name' => 'Meh');
 
 
             /*
@@ -94,7 +94,7 @@ class FrontuserController extends BaseController
             */
             Mail::send('live.signup', $data, function ($message) use ($email) {
                 $message->subject('Message Subject');
-                $message->from('sahil_kaushal@esferasoft.com', 'sahil');
+                $message->from('radhikapnetwrok@gmail.com', 'sahil');
                 $message->to($user->email);
 
 
